@@ -1,2 +1,2 @@
 # chat_ML
-This is callabaroatory effort for the machine learning portion of ncarlson's project.
+This is a collaboratory effort for the machine learning portion of ncarlson's project.
