@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Jul 21 21:51:05 2019
-
 @author: Nick
 """
 
@@ -41,7 +39,7 @@ clf.fit(X_train, y_train)
 score = clf.score(X_test, y_test)
 
 # print('Best C % .4f' % clf.C_)
-print("Sparsity with L1 penalty: %.2f%%" % sparsity)
+#print("Sparsity with L1 penalty: %.2f%%" % sparsity)
 print("Test score with L1 penalty: %.4f" % score)
 
 #dec = clf.decision_function([[1]])
