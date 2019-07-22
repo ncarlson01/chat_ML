@@ -31,9 +31,9 @@ X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
 #multinomial logistic regression object using L1 penalty
-clf = LogisticRegression(C=50. / train_samples,
-                         multi_class='multinomial',
-                         penalty='l1', solver='saga', tol=0.1)
+clf = LogisticRegression(C=50. / 433,
+                     multi_class='multinomial',
+                     penalty='elasticnet', solver='saga', tol=0.1, l1_ratio=0.4)
 
 #train model
 clf.fit(X_train, y_train)
