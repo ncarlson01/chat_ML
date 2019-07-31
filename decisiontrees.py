@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+"""
+@author: Nick
+"""
+
 import pandas as pd
 from sklearn import tree
 from sklearn.model_selection import train_test_split
@@ -22,7 +27,7 @@ scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
-clf = tree.DecisionTreeClassifier()
+clf = tree.DecisionTreeClassifier(criterion='entropy')
 
 #train model
 clf.fit(X_train, y_train)
