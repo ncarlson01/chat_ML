@@ -24,7 +24,7 @@ X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
 #kneighbors classifier object
-knn = KNeighborsClassifier(n_neighbors=5, weights='uniform', algorithm='auto', leaf_size=30, 
+knn = KNeighborsClassifier(n_neighbors=5, weights='uniform', algorithm='kd_tree', leaf_size=30, 
                            p=2, metric='minkowski', metric_params=None, n_jobs=None)
 
 #fit model
